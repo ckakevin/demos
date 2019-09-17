@@ -1,0 +1,23 @@
+body{
+	margin:auto;
+	height: 100%;
+}
+
+.container {
+	height: 700px;
+	width:100%;
+	margin-top: calc((100vh - 700px)/2);
+	background-color: blue;
+}
+
+
+.house{
+	position: relative;
+	width:200px;
+	padding: 10px;
+	height: 200px;
+	margin-bottom: 50px;
+	background-color: red;
+	margin-left:calc(50% - 100px);
+	box-sizing: border-box;
+}

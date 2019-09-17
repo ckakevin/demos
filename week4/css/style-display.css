@@ -1,0 +1,10 @@
+body {
+	font-family: Helvetica;
+}
+
+.block-level {
+	background-color:#f55c81;
+}
+.inline-level {
+	background-color:#2bc6ff;
+}
