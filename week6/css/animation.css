@@ -1,0 +1,89 @@
+body{
+	background-color: #fff;
+	font-family: Helvetica;
+	margin: 0;
+	/* animation-name: bg-change;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;  */
+}
+.container {
+}
+.rectangle {
+	position:absolute;
+	width: 20vh;
+	height: 100%;
+	padding: 3%;
+	box-sizing: border-box;
+	background-color: #000000;
+	/* animation-name: bg-change;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; */
+	/* animation-name: pos-roll;
+	animation-duration: 3s;
+	animation-iteration-count: infinite; */
+}
+
+.circle {
+	position: absolute;
+	left: 25%;
+	width: 20vh;
+	height: 20vh;
+	border-radius: 90px;
+	background-color: green;
+	/* animation-name: pos-change;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+	animation-iteration-count: infinite; */
+}
+
+.circle:hover{
+	background-color: red;
+	animation-name: circle-hover;
+	animation-duration: 3s;
+}
+
+.circle:active{
+	background-color: white;
+	border: 1pt solid black;
+}
+
+#rect-text {
+	color:#ffcf00;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	/* animation-name: ltr-spacing-change;
+	animation-duration: 3s;
+	animation-iteration-count: infinite; */
+}
+
+@keyframes bg-change {
+  from {background-color: #3c7eff;}
+  to {background-color: #8952ff;}
+}
+@keyframes pos-change {
+	from {left: 25%;}
+	to {left: 100%;}
+}
+
+@keyframes ltr-spacing-change {
+	0%   {letter-spacing: 4px;}
+    25%  {letter-spacing: 8px;}
+    50%  {letter-spacing: 2px;}
+    75%  {letter-spacing: 8px;}
+    100% {letter-spacing: 4px;}
+}
+
+@keyframes pos-roll {
+	0%   {width: 40%;}
+	25%  {width: 100%;}
+	50%  {width: 20%;}
+	75%  {width: 100%;}
+	100% {width: 20%;}
+}
+
+@keyframes circle-hover {
+	from {width: 20vh;
+		height: 20vh;}
+	to {width: 10vh;
+		height: 10vh;}
+}
