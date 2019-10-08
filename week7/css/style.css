@@ -1,0 +1,52 @@
+body {
+	background-color: black;
+}
+
+.container {
+	position: absolute;
+	top: 25%;
+	left:100px;
+	width: 200px;
+	height: 22.5vw;
+	box-sizing: border-box;
+}
+
+.a-diag {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid #ff6b57;
+}
+
+.a-str {
+	position: absolute;
+	left: 40px;
+	top: 140px;
+	width: 130px;
+	height: 20px;
+	background-color: #ff6b57;
+}
+
+.a-neg {
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 40px;
+	left: 40px;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 160px solid black;
+}
+
+#A {
+    z-index: 99;
+	position: absolute;
+	left: 290px;
+    width: 200px;
+    height: 200px;
+}
+
+#A:hover {
+	left: 400px;
+}
